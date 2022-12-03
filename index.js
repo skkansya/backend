@@ -79,7 +79,7 @@ app.post("/api/test", verifyToken, async (req, resp) => {
 
 app.post("/",  async (req, resp) => {
   //add area
-  resp.send("hello");
+  resp.send("hello world");
 });
 
 app.post("/api/area", async (req, resp) => {
