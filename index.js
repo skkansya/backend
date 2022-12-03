@@ -77,6 +77,11 @@ app.post("/api/test", verifyToken, async (req, resp) => {
   resp.send(req.body);
 });
 
+app.post("/",  async (req, resp) => {
+  //add area
+  resp.send("hello");
+});
+
 app.post("/api/area", async (req, resp) => {
   //add area
   let area = new Area(req.body);
